@@ -10,7 +10,7 @@ def train(model, loader, optimizer, criterion, device):
         optimizer.zero_grad()
         out = model(x)
         loss = criterion(out, y)
-        loss.backward()
+        loss.backward()   #changes weights
         optimizer.step()
 
         total_loss += loss.item()

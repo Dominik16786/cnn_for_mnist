@@ -7,7 +7,6 @@ from train import train, evaluate
 from preprocessing import get_dataloaders
 from utils import get_device
 
-# load config
 with open("config.yaml") as f:
     config = yaml.safe_load(f)
 
